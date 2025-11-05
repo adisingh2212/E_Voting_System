@@ -21,11 +21,11 @@ The system integrates a modern frontend, robust backend, Java middleware for dat
 
 ### 🧩 System Architecture
 - Frontend (React.js)
--     ↓
+-    ↓
 - Backend (Node.js + Express)
--     ↓
+-    ↓
 - Middleware (Java JDBC Layer)
--     ↓
+-    ↓
 - Database (MySQL)
 
 
