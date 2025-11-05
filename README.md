@@ -1,4 +1,4 @@
-# 🗳️ eVoting – Full Stack Electronic Voting Software  
+# 🗳️ E_Voting – Full Stack Electronic Voting Software  
 
 **eVoting** is a complete **full-stack digital voting platform** built using **React.js**, **Node.js**, **Java**, and **MySQL**.  
 It enables users to securely cast their votes online, view live results, and ensures transparency through real-time updates and a multi-layered architecture.  
@@ -20,13 +20,13 @@ The system integrates a modern frontend, robust backend, Java middleware for dat
 - ⚡ **Scalable Architecture** – Easily extendable for future modules or cloud deployment  
 
 ### 🧩 System Architecture
-Frontend (React.js)
-↓
-Backend (Node.js + Express)
-↓
-Middleware (Java JDBC Layer)
-↓
-Database (MySQL)
+- Frontend (React.js)
+-     ↓
+- Backend (Node.js + Express)
+-     ↓
+- Middleware (Java JDBC Layer)
+-     ↓
+- Database (MySQL)
 
 
 ### 🛠️ How to Run
