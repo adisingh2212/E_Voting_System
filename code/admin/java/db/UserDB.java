@@ -18,14 +18,14 @@ public class UserDB extends DatabaseManager {
      * @param filter conditions for where clause
      * @return list of citiziens satisfying the applied filters
      * @throws SQLException in case a SQL error occurs
-     *                      kjo funksionon kshu tsh:
-     *                      ky filteri esht i klas qe ka si atribute element
-     *                      qe ti do i perdoresh per te selektuar disa qytetar
-     *                      qe plotsojn i kush te caktum. Psh nqs do me mar
-     *                      qytetaret me emrin Patrik do vendoesh ke filteri
-     *                      filter.setName("Patrik") pstj kur tvi filteri ke kjo metoda
-     *                      do boje SELECT * FORM citizien WHERE  2 sec e kuptoj thjesht ku do percaktohet filteri
-     *                      ? ke middleware ta boj? bo
+     *                      This works like this:
+     *                      This filter is a class that has elements as attributes.
+     *                      You will use these to select some citizens.
+     *                      Who satisfy a certain condition. For example, if you want to get
+     *                      citizens with the name Patrik, you will set the filter to
+     *                      filter.setName("Patrik"). Then when the filter comes to this method,
+     *                      it will do SELECT * FROM citizen WHERE (wait 2 seconds, I just need to figure out where the filter will be defined).
+     *                      Should I put it in the middleware? Done.
      */
     public List <Citizen> getCitiziens(CitizienFilter filter) throws SQLException {
         List <Citizen> citiziens = new ArrayList <>();
@@ -34,7 +34,7 @@ public class UserDB extends DatabaseManager {
                 "\n FROM citizien" +
                 "\n WHERE ";
         if (filter.isFullBody()) {
-            query += "1 = 1"; //tani ti boj kshu komit dhe push? po ja i sek
+            query += "1 = 1"; //Now should I do 'commit' and 'push' like this? Wait, just one second.
         } else if (filter.hasIdFilter()) {
             query += "citizien.id = " + filter.getId();
         } else if (filter.hasNameFilter()) {
@@ -59,7 +59,7 @@ public class UserDB extends DatabaseManager {
 
     public void getNameFromAuthor(int id) throws Exception {
 
-        String query1 = "SELECT * FROM author WHERE id = 1"; // boje me ID pstj
+        String query1 = "SELECT * FROM author WHERE id = 1"; // Make it with ID, then...
 
         Statement statement1 = super.getConnection().createStatement();
         ResultSet resultSet1 = statement1.executeQuery(query1);

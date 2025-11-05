@@ -39,7 +39,7 @@ public class Supervisor {
         this.votingCenter = votingCenter;
     }
 
-    //TODO
+
     public boolean submitInfo(){
         return true;
     }

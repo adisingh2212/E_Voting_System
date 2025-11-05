@@ -53,15 +53,18 @@ public class UserMiddleware {
         }
         return null;
     }
-    // tashi gjith kjoesht bo mos me shkrujt disa query po t perdoresh vetem ate qe bone ti?
-    // po kshu nuk bon kod kot dhe ke me pak mundsi tkesh buge se e shkru vec iher
-    // nca kuptimi e shkru vec i her se ket pjes se kam t qart
-    // 1. shkrun vec i query jo disa
-    // 2. nqs ka bug e ke vetem ke i metod vtm me ate do meresh
-    // po mir e kuptoj po edhe n ket rast ti 1 query ke po do bosh shum filtrime kurse n at rastin tj thjesht ke disa query dhe do i thrrasesh
-    // po si esht me e thjesht dhe e shpejt me bo disa metoda me query result sets prepared statements apo me shut nje if aty me filter?
-    // ehe po e marr vesh se aty n fakt do perserisesh shum kod po bone disa query po ket metoden se kisha pa najher n fakt rrsp :p
-    // haah tkurse shum koh kjo po e shof e kam kuptu tn thjesht kodi kshu specifikisht do pa tamom psh
+     // So now all of this is done so that instead of writing multiple queries, you just use the one you built?
+     // This way, you don’t write extra code and have fewer chances of bugs since it’s written only once.
+     // What does “written only once” exactly mean here? I didn’t fully get that part.
+     // 1. You write just one query, not several.
+     // 2. If there’s a bug, it’ll only be in one method — you’ll only have to fix it there.
+     // Okay, I get that, but even in this case, you have just one query, but you’ll do a lot of filtering,
+     // whereas in the other approach, you’d simply have multiple queries that you’d call.
+     // So which is simpler and faster — to make several methods with separate query result sets and prepared statements,
+     // or just one query with if conditions and filters?
+     // Ah, I see now — because in that case, you’d repeat a lot of code if you wrote multiple queries.
+     // But I hadn’t seen this method before, honestly, nice :p
+     // Haha, this actually saves a lot of time — now I get it; the code like this needs to be seen properly, for example.
 
     public List<Citizen> getCitiziensByName(String name) {
         try{

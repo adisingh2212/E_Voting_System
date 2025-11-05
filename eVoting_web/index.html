@@ -11,7 +11,7 @@
     <title>eVoting - Electronic Voting System</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet" >
@@ -49,39 +49,18 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#sondazh">Sondazhi</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#statistika">Statistika Live</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#rreth-nesh">Rreth Nesh</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Ekipi i Punes</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#lajme">Njoftimet e Fundit</a>
-                    </li>
-                 
-                    <li>
-                        <a class="page-scroll" href="#partner">Partnerë</a>
-                    </li>
-                  
+                    <li><a class="page-scroll" href="#poll">Poll</a></li>
+                    <li><a class="page-scroll" href="#statistics">Live Statistics</a></li>
+                    <li><a class="page-scroll" href="#about-us">About Us</a></li>
+                    <li><a class="page-scroll" href="#team">Our Team</a></li>
+                    <li><a class="page-scroll" href="#news">Latest Announcements</a></li>
+                    <li><a class="page-scroll" href="#partners">Partners</a></li>
                 </ul>
             </div>
-
         </div>
-
     </nav>
 
-    
-    
-    
-
     <section id="page-top">
-
         <div id="main-slide" class="carousel slide" data-ride="carousel">
 
             <ol class="carousel-indicators">
@@ -89,49 +68,46 @@
                 <li data-target="#main-slide" data-slide-to="1"></li>
                 <li data-target="#main-slide" data-slide-to="2"></li>
             </ol>
+
             <div class="carousel-inner">
                 <div class="item active">
                     <img class="img-responsive" src="images/header-bg-1.jpg" alt="slider">
                     <div class="slider-content">
                         <div class="col-md-12 text-center">
                             <h1 class="animated3">
-                                <span><strong>EVS</strong>Electronic Voting System</span>
+                                <span><strong>EVS</strong> Electronic Voting System</span>
                             </h1>
-                            <p class="animated2">Sllogan, Sllogan, Sllogan, Sllogan, Sllogan, Sllogan, Sllogan, </p>	
-                            <a href="#rreth-nesh" class="page-scroll btn btn-primary animated1">Lexo më shumë rreth nesh</a>
+                            <p class="animated2">Slogan, Slogan, Slogan, Slogan, Slogan, Slogan, Slogan</p>	
+                            <a href="#about-us" class="page-scroll btn btn-primary animated1">Read more about us</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="item">
                     <img class="img-responsive" src="images/header-back.png" alt="slider">
-                    
                     <div class="slider-content">
                         <div class="col-md-12 text-center">
                             <h1 class="animated1">
-                    		  <span>Mirëseerdhët<strong></strong></span>
+                    		  <span>Welcome<strong></strong></span>
                     	    </h1>
-                            <p class="animated2">Merr pjesë tani ne sondazh !</p>
-                            <a href="#sondazh" class="page-scroll btn btn-primary animated3">Lexo më shumë</a>
+                            <p class="animated2">Take part in the poll now!</p>
+                            <a href="#poll" class="page-scroll btn btn-primary animated3">Read more</a>
                         </div>
                     </div>
                 </div>
 
-                
                 <div class="item">
-                    <img class="img-responsive" src="images//galaxy.jpg" alt="slider">
+                    <img class="img-responsive" src="images/galaxy.jpg" alt="slider">
                     <div class="slider-content">
                         <div class="col-md-12 text-center">
                             <h1 class="animated2">
-                                <span>Mëso lajmet <strong>e fundit.</strong></span>
+                                <span>Learn the <strong>latest news</strong>.</span>
                             </h1>
-                            <p class="animated1">Njoftime, ngjarjet dhe lajmet me te fundit rreth zgjedhjeve.</p>	
-                             <a class="animated3 slider btn btn-primary btn-min-block" href="#lajme">Lexo më shumë</a>
-                                
+                            <p class="animated1">Announcements, events, and the latest election updates.</p>	
+                             <a class="animated3 slider btn btn-primary btn-min-block" href="#news">Read more</a>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <a class="left carousel-control" href="#main-slide" data-slide="prev">
@@ -141,381 +117,169 @@
                 <span><i class="fa fa-angle-right"></i></span>
             </a>
         </div>
-
     </section>
 
-        <section id="sondazh" class="sondazh-section">
-            <div class="rreth-nesh-section-2">
-        <div class="container">  
-            <br />  
-
-            <h2 align="center" style="color:grey; font-family: verdana;">Rezultatet e Sondazhit deri me tani</h2><br />
-            <div class="row">
-                <div class="col-md-6">
-                    <form method="post" id="poll_form">
-                        <h3>Kush nga keto parti meriton te qeverise vendin?</h3>
-                        <br />
-                        <div class="radio">
-                            <label><h4><input type="radio" name="poll_option" class="poll_option" value="Partia A" /> Partia A </h4></label>
-                        </div>
-                        
-                        <div class="radio">
-                            <label><h4><input type="radio" name="poll_option" class="poll_option" value="Partia B" /> Partia B</h4></label>
-                        </div>
-                        <div class="radio">
-                            <label><h4><input type="radio" name="poll_option" class="poll_option" value="Partia C" /> Partia C</h4></label>
-                        </div>
-                        <div class="radio">
-                            <label><h4><input type="radio" name="poll_option" class="poll_option" value="Partia D" /> Partia D</h4></label>
-                        </div>
-                        <div class="radio">
-                            <label><h4><input type="radio" name="poll_option" class="poll_option" value="Tjeter" /> Tjeter</h4></label>
-                        </div>
-                        <br />
-                        <input type="submit" name="poll_button" id="poll_button" class="btn btn-primary" />
-                    </form>
-                    <br />
-                </div>
-                <div class="col-md-6">
-                    <br />
-                    <br />
-                    <br />
-                    <h4>Sondazhi Live</h4><br />
-                    <div id="poll_result"></div>
-                </div>
-            </div>
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-          
-        </section>
-
-    
-    
-
-        <section id="statistika" class="statistika-section-1">
-            <div class="container">
+    <section id="poll" class="poll-section">
+        <div class="about-section-2">
+            <div class="container">  
+                <br />  
+                <h2 align="center" style="color:grey; font-family: verdana;">Poll Results So Far</h2><br />
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h3>Procesi zgjedhor ne kohe reale</h3>
-                            <p>Statistika rreth zgjedhjeve te perditesuara ne kohe reale</p>
-                        </div>                        
+                    <div class="col-md-6">
+                        <form method="post" id="poll_form">
+                            <h3>Which of these parties deserves to govern the country?</h3>
+                            <br />
+                            <div class="radio">
+                                <label><h4><input type="radio" name="poll_option" class="poll_option" value="Party A" /> Party A</h4></label>
+                            </div>
+                            <div class="radio">
+                                <label><h4><input type="radio" name="poll_option" class="poll_option" value="Party B" /> Party B</h4></label>
+                            </div>
+                            <div class="radio">
+                                <label><h4><input type="radio" name="poll_option" class="poll_option" value="Party C" /> Party C</h4></label>
+                            </div>
+                            <div class="radio">
+                                <label><h4><input type="radio" name="poll_option" class="poll_option" value="Party D" /> Party D</h4></label>
+                            </div>
+                            <div class="radio">
+                                <label><h4><input type="radio" name="poll_option" class="poll_option" value="Other" /> Other</h4></label>
+                            </div>
+                            <br />
+                            <input type="submit" name="poll_button" id="poll_button" class="btn btn-primary" />
+                        </form>
+                        <br />
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        
-                           <section class="fun-facts">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                      
-                        <i class="fa fa-cloud-upload"></i>
-                        <div class="timer" id="item1" data-to="991" data-speed="5000"></div>
-                        <h5>Votues deri me tani</h5>                               
-                      </div>
-                    </div>  
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                        <i class="fa fa-check"></i>
-                        <div class="timer" id="item2" data-to="39" data-speed="5000"></div>
-                        <h5>Pjesemarrja ne % deri tani</h5>                               
-                      </div>
+                    <div class="col-md-6">
+                        <br /><br /><br />
+                        <h4>Live Poll</h4><br />
+                        <div id="poll_result"></div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                        <i class="fa fa-male"></i>
-                        <div class="timer" id="item3" data-to="18745" data-speed="5000"></div>
-                        <h5>Koalicioni Kryesues (VOTA)</h5>                               
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                        <i class="fa fa-male"></i>
-                        <div class="timer" id="item4" data-to="8423" data-speed="5000"></div>
-                        <h5>Koalicioni i dyte (VOTA)</h5>                               
-                      </div>
-                    </div>
+                </div>  
             </div>
         </div>
     </section>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <div class="section-modal modal fade" id="statistika-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title text-center">
-                            <h3>statistika</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        
-                        <div class="col-md-6">
-                            <img src="images/statistika/img1.jpg" class="img-responsive" alt="..">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="images/statistika/img1.jpg" class="img-responsive" alt="..">
-                        </div>
-                        
-                    </div>
-                </div>                
-            </div>
-        </div>
-
-    
-    
-
-    <section id="rreth-nesh" class="rreth-nesh-section-1">
+    <section id="statistics" class="statistics-section-1">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title text-center">
-                            <h3>Rreth Nesh</h3>
-                            <p>Kush jemi ne?</p>
-                        </div>
+                <div class="col-md-12 text-center section-title">
+                    <h3>Election Process in Real Time</h3>
+                    <p>Up-to-date statistics about the elections</p>
                 </div>
             </div>
+
             <div class="row">
-                
+                <section class="fun-facts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <i class="fa fa-cloud-upload"></i>
+                                    <div class="timer" id="item1" data-to="991" data-speed="5000"></div>
+                                    <h5>Voters so far</h5>                               
+                                </div>
+                            </div>  
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <i class="fa fa-check"></i>
+                                    <div class="timer" id="item2" data-to="39" data-speed="5000"></div>
+                                    <h5>Participation percentage so far</h5>                               
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <i class="fa fa-male"></i>
+                                    <div class="timer" id="item3" data-to="18745" data-speed="5000"></div>
+                                    <h5>Leading Coalition (VOTES)</h5>                               
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <i class="fa fa-male"></i>
+                                    <div class="timer" id="item4" data-to="8423" data-speed="5000"></div>
+                                    <h5>Second Coalition (VOTES)</h5>                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="about-section-1">
+        <div class="container text-center">
+            <div class="section-title">
+                <h3>About Us</h3>
+                <p>Who are we?</p>
+            </div>
+            <div class="row">
                 <div class="col-md-4">
-                    <div class="welcome-section text-center">
+                    <div class="welcome-section">
                         <img src="images/about-01.jpg" class="img-responsive" alt="..">
-                        <h4>Qellimi dhe misioni jone</h4>
+                        <h4>Our Purpose and Mission</h4>
                         <div class="border"></div>
-                        <p>pershkrim pershkrim pershkrim pershkrim pershkrim</p>
+                        <p>Description description description description description</p>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="welcome-section text-center">
+                    <div class="welcome-section">
                         <img src="images/about-02.jpg" class="img-responsive" alt="..">
-                        <h4>Filozofia jone</h4>
+                        <h4>Our Philosophy</h4>
                         <div class="border"></div>
-                        <p>pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim</p>
+                        <p>Description description description description description description</p>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="welcome-section text-center">
+                    <div class="welcome-section">
                         <img src="images/about-03.jpg" class="img-responsive" alt="..">
-                        <h4>Rregulla</h4>
+                        <h4>Rules</h4>
                         <div class="border"></div>
-                        <p>pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim</p>
+                        <p>Description description description description description description</p>
                     </div>
                 </div>
-                
             </div>       
-            
         </div>
     </section>
-
-
-    
-
-    
 
     <section id="team" class="team-member-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title text-center">
-                            <h3>Ekipi Jonë</h3>
-                            <p></p>
-                        </div>
-                </div>
+            <div class="section-title text-center">
+                <h3>Our Team</h3>
             </div>
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="team-section">
-                    
-                        
-                
-                
-
-                                <div class="our-team">
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-1.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>Emer Mbiemer</h4>
-                                            <p>CEO</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                      
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-2.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>Emer Mbiemer</h4>
-                                            <p>CEO</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-3.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>Emer Mbiemer</h4>
-                                            <p>Dizenjues</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                       
-                                            </ul>
-                                        </div>
-                                    </div>    
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-4.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>Emer Mbiemer</h4>
-                                            <p>Dizenjues</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                           
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-1.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>Emer Mbiemer</h4>
-                                            <p>Dizenjues</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-2.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>Emer Mbiemer</h4>
-                                            <p>CEO</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                          
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                    
+            <div class="our-team">
+                <div class="team-member">
+                    <img src="images/team/manage-1.png" class="img-responsive" alt="">
+                    <div class="team-details">
+                        <h4>First Lastname</h4>
+                        <p>CEO</p>
                     </div>
                 </div>
-            </div>
-                
-        </div>
-    </section>
-    <
-    <section id="lajme" class="lajme-section-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title text-center">
-                            <h3>Lajmet me te fundit.</h3>
-                            <p>Njoftime, ngjarjet dhe lajmet me te fundit rreth zgjedhjeve.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="row">
-                
-                <div class="col-md-4">
-                    <div class="welcome-section text-center">
-                        <img src="images/about-01.jpg" class="img-responsive" alt="..">
-                        <h4>Dorehiqet nga kandidatura deputeti A</h4>
-                        <div class="border"></div>
-                        <p>pershkrim pershkrim pershkrim pershkrim pershkrim</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="welcome-section text-center">
-                        <img src="images/about-02.jpg" class="img-responsive" alt="..">
-                        <h4>Partia X shpall listen e kandidateve</h4>
-                        <div class="border"></div>
-                        <p>pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="welcome-section text-center">
-                        <img src="images/about-03.jpg" class="img-responsive" alt="..">
-                        <h4></h4>
-                        <div class="border"></div>
-                        <p>pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim pershkrim</p>
-                    </div>
-                </div>
-                
-            </div>       
-            
-        </div>
-    </section>
-
-
-    <section id="partner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center">
-                        <h3>Partneret tane</h3>
-                        <p>pershkrim</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="clients">
-                    
-                    <div class="col-md-12">
-                        <img src="images/ev.png" class="img-responsive" alt="...">
-                    </div>
-                    
-                    
-                    
-                </div>
+                <!-- Repeat team members -->
             </div>
         </div>
     </section>
-    
-    
-    
-    
 
-    
+    <section id="news" class="news-section-1">
+        <div class="container text-center">
+            <div class="section-title">
+                <h3>Latest News</h3>
+                <p>Announcements, events, and the latest election updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners">
+        <div class="container text-center">
+            <div class="section-title">
+                <h3>Our Partners</h3>
+                <p>Description</p>
+            </div>
+            <img src="images/ev.png" class="img-responsive" alt="...">
+        </div>
+    </section>
 
     <div id="loader">
         <div class="spinner">
@@ -524,14 +288,8 @@
         </div>
     </div>
 
-    
-
     <script src="js/jquery-2.1.1.min.js"></script>
-
-
     <script src="asset/js/bootstrap.min.js"></script>
-
-
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/count-to.js"></script>
@@ -540,67 +298,55 @@
     <script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.fitvids.js"></script>
 	<script src="js/styleswitcher.js"></script>
-
-
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-
-
     <script src="js/script.js"></script>
 
-</body>
-
-</html>
-<script>  
+<script>
 $(document).ready(function(){
-    
+
     fetch_poll_data();
 
-    function fetch_poll_data()
-    {
+    function fetch_poll_data() {
         $.ajax({
             url:"fetch_poll_data.php",
             method:"POST",
-            success:function(data)
-            {
+            success:function(data) {
                 $('#poll_result').html(data);
             }
         });
     }
-    
+
     $('#poll_form').on('submit', function(event){
         event.preventDefault();
         var poll_option = '';
         $('.poll_option').each(function(){
-            if($(this).prop("checked"))
-            {
+            if($(this).prop("checked")) {
                 poll_option = $(this).val();
             }
         });
-        if(poll_option != '')
-        {
+        if(poll_option != '') {
             $('#poll_button').attr('disabled', 'disabled');
             var form_data = $(this).serialize();
             $.ajax({
                 url:"poll.php",
                 method:"POST",
                 data:form_data,
-                success:function()
-                {
+                success:function() {
                     $('#poll_form')[0].reset();
                     $('#poll_button').attr('disabled', false);
                     fetch_poll_data();
-                    alert("Votimi u krye me sukses");
+                    alert("Your vote has been successfully submitted.");
                 }
             });
         }
-        else
-        {
-            alert("Ju lutem zgjidhni nje nga opsionet");
+        else {
+            alert("Please select one of the options.");
         }
     });
-    
-    
-    
-});  
+});
 </script>
+
+</body>
+
+</html>
